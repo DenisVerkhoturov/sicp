@@ -1,0 +1,6 @@
+(define (sum-of-square-of-two-largest a b c)
+ (cond ((> a b) (+ (square a) (square (max b c))))
+       ((> b a) (+ (square b) (square (max a c))))
+       (else    (+ (square c) (square (max a b))))
+ )
+)
